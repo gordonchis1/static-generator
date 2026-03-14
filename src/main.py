@@ -9,9 +9,7 @@ def main():
     if len(args) > 1:
         base_path = args[1]
 
-
-
-    copy_static_to_public()
+    copy_static_to_public("./static", "./docs")
     generate_pages_recursive("content/", "template.html", "docs/", base_path)
 
     

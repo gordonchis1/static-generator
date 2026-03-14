@@ -21,9 +21,9 @@ def copy_files(source, destination):
 
 
 
-def copy_static_to_public():
-    source = os.path.abspath("./static")
-    destination = os.path.abspath("./public")
+def copy_static_to_public(static, pubic):
+    source = os.path.abspath(static)
+    destination = os.path.abspath(pubic)
 
     print(f"> Remove directory: {destination}")
     if os.path.exists(destination):
