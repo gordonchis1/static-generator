@@ -56,3 +56,6 @@ def markdown_to_html_node(markdown):
                     text_list.append(line.lstrip(">").strip())
                 block_childs = text_to_children(" ".join(text_list))
                 childs.append(ParentNode("blockquote", block_childs))
+        
+    root = ParentNode("div", childs )
+    return root
